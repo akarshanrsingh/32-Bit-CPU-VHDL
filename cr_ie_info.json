@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Red Hat",
+		"os_version" : ""
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "not_applicable",
+		"error_message" : "Segment Violation at 0xc8",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7fcef3a40adc: db_hdb + 0xf2adc (_ZNK22HDB_ACTION_PT_INSTANCE18get_action_pt_treeEv + 0xc)\n\t0x7fcf25857914: comp_qcu + 0x5e914 (_ZN26QCU_MSG_SUPPRESSION_LOOKUP9check_hdbEjPb + 0x74)\n\t0x7fcf25857c90: comp_qcu + 0x5ec90 (_ZN26QCU_MSG_SUPPRESSION_LOOKUP13is_suppressedEj + 0x22)\n\t0x7fcef1128bb0: ccl_msg + 0x83bb0 (_ZN9MSG_INDEX22is_suppressed_globallyEj + 0xc0)\n\t0x7fcf319efc96: neto_tbo + 0x3dc96 (_ZN7MSG_TBO1W24UNSUPPORTED_OUTPUT_PORTSERKSs + 0x1c)\n\t0x7fcf319f0449: neto_tbo + 0x3e449 (_ZN8TBO_UTIL16generate_warningENS_12WARNING_CODEERKSt6vectorISsSaISsEE + 0xc9)\n\t0x7fcf319cb399: neto_tbo + 0x19399 (_ZNK19TBO_COMMON_VDB_INFO17is_output_channelEP11VDB_CHANNELb + 0x83)\n\t0x7fcf319e32a3: neto_tbo + 0x312a3 (_ZN18TBO_VLG_VEC_WRITER20write_patterns_blockE13TBO_DATA_TYPE + 0x209)\n\t0x7fcf319e4767: neto_tbo + 0x32767 (_ZN18TBO_VLG_VEC_WRITER19write_initial_blockEv + 0x1f)\n\t0x7fcf319debd4: neto_tbo + 0x2cbd4 (_ZN18TBO_VLG_TPT_WRITER12write_moduleEv + 0x46)\n\t0x7fcf319dedf9: neto_tbo + 0x2cdf9 (_ZN18TBO_VLG_TPT_WRITER10write_fileEv + 0x219)\n\t0x7fcf319c5886: neto_tbo + 0x13886 (_ZN10TBO_WRITER10write_fileEPK8VDB_DATAP26HDB_CMP_ACTION_PT_INSTANCE13TBO_DATA_TYPERK8BIG_TIME + 0x228)\n\t0x7fcf319c3521: neto_tbo + 0x11521 (_ZN11TBO_BUILDER20write_testbench_fileEv + 0x15d)\n\t   0x43efbe: quartus_eda + 0x3efbe (_Z13qneto_executeP10CMP_FACADEPKcbbSsSsSsbRK10QEDAU_UTIL + 0x124d)\n\t   0x412754: quartus_eda + 0x12754 (_ZN15QNETO_FRAMEWORK7executeEv + 0x52a)\n\t0x7fcf24cca66b: comp_qexe + 0x1c66b (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x888)\n\t   0x412b01: quartus_eda + 0x12b01 (_Z10qneto_mainiPPKc + 0x9b)\n\t0x7fcef10e5360: ccl_msg + 0x40360 (_Z15msg_main_threadPv + 0x10)\n\t0x7fceee44902c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7fcef10e541c: ccl_msg + 0x4041c (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7fceeeab9359: ccl_mem + 0xb359 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7fceee885f98: ccl_err + 0x8f98 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7fceee4493f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7fcef10e7622: ccl_msg + 0x42622 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x41a566: quartus_eda + 0x1a566 (main + 0x26)\n\t0x7fcee90d57e5: c.so.6 + 0x3a7e5 (__libc_start_main + 0xe5)\n\t   0x410bb9: quartus_eda + 0x10bb9\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "16.0.0",
+		"build" : "211",
+		"edition" : "Standard Edition"
+	}
+}
